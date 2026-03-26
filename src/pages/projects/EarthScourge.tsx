@@ -246,26 +246,9 @@ const EarthScourge = () => {
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-foreground/60">Tech Stack</span>
-                      <span>ROS, Edge AI, CV</span>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm mb-2">
                       <span className="text-foreground/60">Vision Accuracy</span>
                       <span>98.7%</span>
                     </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-border">
-                  <h4 className="font-semibold mb-4">Technologies Used</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["ROS2", "TensorFlow", "OpenCV", "Edge TPU", "LiDAR", "RTK GPS", "Solar Panels"].map((tech) => (
-                      <span key={tech} className="px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                        {tech}
-                      </span>
-                    ))}
                   </div>
                 </div>
 

@@ -194,23 +194,6 @@ const JengaConnect = () => {
                       <span>E-commerce Platform</span>
                     </div>
                   </div>
-                  <div>
-                    <div className="flex justify-between text-sm mb-2">
-                      <span className="text-foreground/60">Tech Stack</span>
-                      <span>React, Node.js, ML</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-border">
-                  <h4 className="font-semibold mb-4">Technologies Used</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["React", "Node.js", "PostgreSQL", "Redis", "TensorFlow", "AWS", "Stripe"].map((tech) => (
-                      <span key={tech} className="px-3 py-1 text-xs rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-border">

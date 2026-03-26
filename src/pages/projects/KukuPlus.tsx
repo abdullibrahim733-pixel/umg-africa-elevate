@@ -205,26 +205,9 @@ const KukuPlus = () => {
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-foreground/60">Tech Stack</span>
-                      <span>IoT, Edge AI, React</span>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm mb-2">
                       <span className="text-foreground/60">Impact</span>
                       <span>40% mortality reduction</span>
                     </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-border">
-                  <h4 className="font-semibold mb-4">Technologies Used</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["ESP32", "TensorFlow Lite", "React Native", "Node.js", "MQTT", "AWS IoT", "PostgreSQL"].map((tech) => (
-                      <span key={tech} className="px-3 py-1 text-xs rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20">
-                        {tech}
-                      </span>
-                    ))}
                   </div>
                 </div>
 
