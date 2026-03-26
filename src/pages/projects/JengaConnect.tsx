@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Building2, Users, TrendingUp, Globe, Zap, Shield, BarChart3, Handshake, Package, Truck } from "lucide-react";
+import { ArrowLeft, ArrowRight, Building2, Users, TrendingUp, Globe, Zap, Shield, BarChart3, Handshake, Package, Truck, Download, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const JengaConnect = () => {
@@ -232,6 +232,28 @@ const JengaConnect = () => {
             transition={{ delay: 0.6 }}
             className="mt-20 pt-16 border-t border-border"
           >
+            <div className="p-8 rounded-3xl bg-gradient-to-r from-orange-500/20 via-orange-500/10 to-transparent border border-orange-500/30 mb-16">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 rounded-2xl bg-orange-500/20 flex items-center justify-center">
+                    <Smartphone className="text-orange-400" size={32} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-1">Download Jenga Connect App</h3>
+                    <p className="text-foreground/60">Get the Android app and start trading construction materials today</p>
+                  </div>
+                </div>
+                <a
+                  href="/apps/jenga-connect.apk"
+                  download="JengaConnect.apk"
+                  className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold transition-all hover:scale-105 hover:shadow-lg hover:shadow-orange-500/30"
+                >
+                  <Download size={20} />
+                  Download APK
+                </a>
+              </div>
+            </div>
+
             <h2 className="text-2xl font-heading font-bold mb-8">Other Projects</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Link
