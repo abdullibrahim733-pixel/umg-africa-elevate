@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logoImg from "@/assets/1769963598776.png";
+import logoImg from "@/assets/logo.jpg";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -39,7 +39,7 @@ const Navbar = () => {
             <img 
               src={logoImg} 
               alt="UMG Africa" 
-              className="h-full w-auto object-contain scale-150 translate-y-[-10%]"
+              className="h-full w-auto object-contain"
             />
           </div>
           <span className="font-heading font-bold text-xl tracking-tight hidden sm:block">
