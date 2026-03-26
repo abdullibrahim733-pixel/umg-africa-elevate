@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ibrahimPhoto from "@/assets/WhatsApp Image 2026-02-23 at 21.22.18.jpeg";
 import abdullazizPhoto from "@/assets/Abdullaziz.jpeg";
-import shedrakPhoto from "@/assets/WhatsApp Image 2026-02-23 at 21.34.05.jpeg";
+import shedrakPhoto from "@/assets/shedrak.png";
 import rajabuPhoto from "@/assets/rajabu.jpeg";
 import mercyPhoto from "@/assets/mercy.png";
 
@@ -19,7 +19,7 @@ const team = [
     photo: abdullazizPhoto,
   },
   {
-    name: "Mercy",
+    name: "Merciana",
     role: "CFO",
     title: "Chief Financial Officer",
     photo: mercyPhoto,
