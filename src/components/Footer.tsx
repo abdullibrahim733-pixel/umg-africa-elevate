@@ -1,14 +1,21 @@
-import { Linkedin, Twitter, Mail, Hexagon } from "lucide-react";
+import { Linkedin, Twitter, Mail } from "lucide-react";
+import logoImg from "@/assets/1769963598776.png";
 
 const Footer = () => (
   <footer className="bg-black text-white py-16 px-4 md:px-8 relative overflow-hidden">
     <div className="container-enterprise relative z-10">
       <div className="grid md:grid-cols-4 gap-12 mb-12">
         <div className="md:col-span-2">
-          <a href="#" className="flex items-center gap-3 mb-4">
-            <Hexagon className="text-accent h-10 w-10" />
+          <a href="#" className="flex items-center gap-2 mb-4">
+            <div className="h-12 w-auto overflow-hidden rounded-lg">
+              <img 
+                src={logoImg} 
+                alt="UMG Africa" 
+                className="h-full w-auto object-contain scale-150 translate-y-[-10%]"
+              />
+            </div>
             <span className="font-heading font-bold text-xl">
-              <span className="text-accent">UMG</span> Africa
+              <span className="text-primary">UMG</span> Africa
             </span>
           </a>
           <p className="text-white/60 max-w-sm leading-relaxed">

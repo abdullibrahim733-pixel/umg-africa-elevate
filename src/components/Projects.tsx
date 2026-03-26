@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Cpu, Bot, Layers, Sparkles, Wifi, BrainCircuit, Smartphone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -139,8 +140,8 @@ const Projects = () => (
                   ))}
                 </div>
 
-                <a
-                  href="#"
+                <Link
+                  to={`/projects/${project.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className="inline-flex items-center gap-2 font-semibold text-sm group/link transition-colors"
                   style={{ color: project.accent }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = "#fff")}
@@ -148,7 +149,7 @@ const Projects = () => (
                 >
                   View Project
                   <ArrowRight className="group-hover/link:translate-x-1 transition-transform" size={16} />
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
@@ -223,8 +224,8 @@ const Projects = () => (
                   ))}
                 </div>
 
-                <a
-                  href="#"
+                <Link
+                  to={`/projects/${project.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className="inline-flex items-center gap-2 font-semibold text-sm group/link transition-colors"
                   style={{ color: project.accent }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = "#fff")}
@@ -232,7 +233,7 @@ const Projects = () => (
                 >
                   View Project
                   <ArrowRight className="group-hover/link:translate-x-1 transition-transform" size={15} />
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
