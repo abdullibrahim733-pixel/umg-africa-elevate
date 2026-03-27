@@ -27,17 +27,15 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-4 md:top-6 left-1/2 z-50 w-[calc(100%-2rem)] max-w-6xl -translate-x-1/2 transition-all duration-500"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-background/90 backdrop-blur-xl border-b border-border shadow-sm"
+          : "bg-transparent"
+      }`}
     >
-      <div
-        className={`flex items-center justify-between gap-6 px-4 md:px-6 ${
-          scrolled ? "py-2 md:py-2.5" : "py-3 md:py-3.5"
-        } rounded-full border border-black/10 dark:border-white/10 bg-background/80 backdrop-blur-2xl shadow-[0_12px_30px_rgba(0,0,0,0.25)] transition-all duration-500 ${
-          scrolled ? "shadow-[0_16px_40px_rgba(0,0,0,0.35)]" : ""
-        }`}
-      >
+      <div className="container-enterprise flex items-center justify-between h-20 px-4 md:px-8">
         <a href="#" className="flex items-center gap-2 group">
-          <div className="h-10 md:h-11 w-auto overflow-hidden rounded-lg">
+          <div className="h-12 w-auto overflow-hidden rounded-lg">
             <img 
               src={logoImg} 
               alt="UMG Africa" 
@@ -85,7 +83,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden mt-3 overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-background/90 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.35)]"
+            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border overflow-hidden"
           >
             <div className="px-4 pb-4 pt-2 space-y-1">
               {navLinks.map((l, i) => (
