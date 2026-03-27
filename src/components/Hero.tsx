@@ -52,7 +52,8 @@ const Hero = () => (
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-foreground/60 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          UMG Africa is a technology-driven company creating solutions that connect industries, 
+          UMG Africa is a mechatronics startup in Africa delivering industrial automation across East Africa
+          and AI & robotics solutions from Arusha, Tanzania. We create systems that connect industries,
           empower businesses, and transform how Africa builds, trades, and grows.
         </motion.p>
 

@@ -8,9 +8,17 @@ import Team from "@/components/Team";
 import CTASection from "@/components/CTASection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
+import { getOrganizationSchema, getWebSiteSchema, siteConfig } from "@/lib/seo";
 
 const Index = () => (
   <>
+    <Seo
+      title={siteConfig.defaultTitle}
+      description={siteConfig.defaultDescription}
+      path="/"
+      schema={[getOrganizationSchema(), getWebSiteSchema()]}
+    />
     <Navbar />
     <Hero />
     <About />

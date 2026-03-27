@@ -1,10 +1,31 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Bot, Cpu, Leaf, Users, Globe, Droplets, Sprout, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
+import { getProjectSchema, resolveUrl } from "@/lib/seo";
 
 const EarthScourge = () => {
+  const description =
+    "Earth-Scourge is UMG Africa's swarm robotics platform for precision weed removal, combining AI vision and mechatronics to reduce herbicide use in African agriculture.";
+
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Earth-Scourge | Swarm Robotics for Precision Agriculture - UMG Africa"
+        description={description}
+        path="/projects/earth-scourge"
+        image="/projects/earth_scourge.png"
+        type="article"
+        schema={[
+          getProjectSchema({
+            name: "Earth-Scourge",
+            description,
+            url: resolveUrl("/projects/earth-scourge"),
+            image: resolveUrl("/projects/earth_scourge.png"),
+            category: "AI robotics and precision agriculture"
+          })
+        ]}
+      />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

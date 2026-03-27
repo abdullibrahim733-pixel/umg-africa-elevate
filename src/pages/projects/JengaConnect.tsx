@@ -1,10 +1,31 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Building2, Users, TrendingUp, Globe, Zap, Shield, BarChart3, Handshake, Package, Truck, Download, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
+import { getProjectSchema, resolveUrl } from "@/lib/seo";
 
 const JengaConnect = () => {
+  const description =
+    "Jenga Connect is UMG Africa's digital construction marketplace connecting suppliers, hardware stores, and builders with real-time inventory, AI supplier matching, and trusted logistics across Africa.";
+
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Jenga Connect | Digital Construction Marketplace in Africa - UMG Africa"
+        description={description}
+        path="/projects/jenga-connect"
+        image="/projects/jenga_connect.png"
+        type="article"
+        schema={[
+          getProjectSchema({
+            name: "Jenga Connect",
+            description,
+            url: resolveUrl("/projects/jenga-connect"),
+            image: resolveUrl("/projects/jenga_connect.png"),
+            category: "Construction marketplace platform"
+          })
+        ]}
+      />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

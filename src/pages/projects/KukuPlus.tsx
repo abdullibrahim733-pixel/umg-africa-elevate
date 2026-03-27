@@ -1,10 +1,33 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Wifi, BrainCircuit, Leaf, Users, AlertCircle, TrendingUp, Smartphone, Activity } from "lucide-react";
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
+import { getProjectSchema, resolveUrl } from "@/lib/seo";
 
 const KukuPlus = () => {
+  const description =
+    "KukuPlus is an autonomous IoT and AI poultry health monitoring system from UMG Africa, delivering edge analytics and early disease detection for farmers across East Africa.";
+  const heroImage =
+    "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1200&q=80";
+
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="KukuPlus | AI & IoT Poultry Health Monitoring - UMG Africa"
+        description={description}
+        path="/projects/kukuplus"
+        image={heroImage}
+        type="article"
+        schema={[
+          getProjectSchema({
+            name: "KukuPlus",
+            description,
+            url: resolveUrl("/projects/kukuplus"),
+            image: heroImage,
+            category: "Agritech IoT and AI monitoring"
+          })
+        ]}
+      />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
