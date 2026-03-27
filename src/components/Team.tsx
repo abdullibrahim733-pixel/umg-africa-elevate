@@ -4,6 +4,7 @@ import abdullazizPhoto from "@/assets/Abdullaziz.jpeg";
 import shedrakPhoto from "@/assets/shedrak.png";
 import rajabuPhoto from "@/assets/rajabu.jpeg";
 import mercyPhoto from "@/assets/mercy.png";
+import emanuelPhoto from "@/assets/emanuel.png";
 
 const team = [
   {
@@ -35,6 +36,12 @@ const team = [
     role: "CME",
     title: "Chief Mechanics Officer",
     photo: rajabuPhoto,
+  },
+  {
+    name: "Emmanuel",
+    role: "MM",
+    title: "Marketing Manager",
+    photo: emanuelPhoto,
   },
 ];
 
