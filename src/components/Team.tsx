@@ -20,7 +20,7 @@ const team = [
     photo: abdullazizPhoto,
   },
   {
-    name: "Merciana",
+    name: "Merciana Joseph",
     role: "CFO",
     title: "Chief Financial Officer",
     photo: mercyPhoto,
@@ -38,7 +38,7 @@ const team = [
     photo: rajabuPhoto,
   },
   {
-    name: "Emmanuel",
+    name: "Emmanuel Anthony",
     role: "MM",
     title: "Marketing Manager",
     photo: emanuelPhoto,
