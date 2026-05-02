@@ -219,7 +219,7 @@ const JengaConnect = () => {
 
                 <div className="mt-8 pt-6 border-t border-border">
                   <a
-                    href="https://jenga-connect.onrender.com"
+                    href="https://jengaconnect.cc"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 w-full justify-center px-6 py-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors"
