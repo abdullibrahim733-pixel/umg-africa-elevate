@@ -4,10 +4,10 @@ export const siteConfig = {
   defaultTitle: "UMG Africa | Mechatronics & Industrial Automation Startup in Africa",
   defaultDescription:
     "UMG Africa builds advanced mechatronics, AI, and industrial automation systems tailored for African industries, construction, and agriculture. Based in Arusha, Tanzania.",
-  siteUrl: import.meta.env.VITE_SITE_URL || "https://umgafrica.org",
+  siteUrl: import.meta.env.VITE_SITE_URL || "https://umgafrica.com",
   ogImage: "/projects/earth_scourge.png",
   twitterHandle: "@UMGAfrica",
-  contactEmail: "info@umgafrica.org",
+  contactEmail: "info@umgafrica.com",
   location: {
     city: "Arusha",
     country: "Tanzania",

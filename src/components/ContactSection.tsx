@@ -44,7 +44,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold mb-1">Email</h3>
-                  <p className="text-foreground/60">info@umgafrica.org</p>
+                  <p className="text-foreground/60">info@umgafrica.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
